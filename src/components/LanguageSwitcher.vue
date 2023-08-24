@@ -24,7 +24,7 @@ export default {
   z-index: 1;
   &:hover {
     background-color: var(--main-color-white);
-    color: var(--main-color-black);
+    color: var(--main-color-dark-grey);
   }
 }
 </style>

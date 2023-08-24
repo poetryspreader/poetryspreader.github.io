@@ -5,7 +5,7 @@
   <BanquetChoice />
   <WorkAtUs />
   <FeedBack />
-  <Footer />
+  <FooterMain />
 </template>
 <script>
 import Promo from './components/sections/PromoMain.vue';
@@ -14,11 +14,11 @@ import AboutUs from './components/sections/AboutUs.vue';
 import BanquetChoice from './components/sections/BanquetChoice.vue';
 import WorkAtUs from './components/sections/VacancyAtUs.vue';
 import FeedBack from './components/sections/FeedBack.vue';
-import Footer from './components/sections/FooterMain.vue';
+import FooterMain from './components/sections/FooterMain.vue';
 
 export default {
   components: {
-    Promo, MenuRecommendations, AboutUs, BanquetChoice, WorkAtUs, FeedBack, Footer
+    Promo, MenuRecommendations, AboutUs, BanquetChoice, WorkAtUs, FeedBack, FooterMain
   }
 }
 </script>
