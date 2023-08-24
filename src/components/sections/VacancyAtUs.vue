@@ -19,7 +19,20 @@ export default {
 </script>
 <style lang="scss">
 .work-at-us {
-  background-color: var(--main-background-color-beige);
+  position: relative;
+  .main-title {
+    margin-top: 0;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background-color: var(--main-background-color-beige);
+    z-index: -1;
+  }
   &__wrapper {
     display: flex;
     justify-content: space-between;
