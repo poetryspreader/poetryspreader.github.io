@@ -49,7 +49,7 @@ export default {
     transition: 0.2s;
     z-index: 1;
     &:hover {
-      color: #000000;
+      color: var(--main-color-sand);
     }
   }
 }

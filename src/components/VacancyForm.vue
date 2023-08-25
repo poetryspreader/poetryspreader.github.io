@@ -13,7 +13,7 @@
     </div>
     <MainButton class="vacancy-form__btn" :title="submitButton" />
     <div class="vacancy-form__email">
-      Или отправляйте заявку на <a href="#">info@vilavi.lv</a>
+      {{ email.label }}<a href="#">{{ email.link }}</a>
     </div>
   </form>
 </template>
@@ -51,7 +51,11 @@ export default {
           fullWidth: true
         }
       ],
-      submitButton: 'Оставить заявку'
+      submitButton: 'Оставить заявку',
+      email: {
+        label: 'Или отправляйте заявку на ',
+        link: 'info@vilavi.lv'
+      }
     }
   }
 }

@@ -8,8 +8,7 @@
       <div class="footer__more">
         {{ more }}
         <div class="arrow">
-          <img src="../../assets/images/arrows/about-us-arrow-pointer.png" alt="arrow">
-          <img src="../../assets/images/arrows/about-us-arrow-stick.png" alt="arrow">
+          <img src="../../assets/images/arrows/arrow-feedback.png" alt="arrow">
         </div>
       </div>
     </div>
@@ -59,26 +58,14 @@ export default {
     .arrow {
       position: absolute;
       top: 50%;
-      right: -7px;
+      right: -10px;
       transform: translateY(-50%);
-      width: 30px;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       cursor: pointer;
       z-index: 10;
-      img:first-child {
+      img {
+        fill: black;
         scale: 0.5;
         transform: rotate(180deg);
-        position: absolute;
-        right: 4px;
-        z-index: 2;
-      }
-      img:last-child {
-        scale: 0.5;
-        z-index: 2;
-        opacity: 1;
       }
     }
   }

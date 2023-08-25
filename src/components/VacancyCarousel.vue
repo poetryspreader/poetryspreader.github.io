@@ -108,7 +108,7 @@ export default {
   &__swiper {
     display: flex;
     flex-direction: column;
-    margin: 30px 0 0 0;
+    margin: 50px 0 0 0;
     width: 580px;
     .swiper-wrapper {
       display: flex;

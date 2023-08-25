@@ -13,17 +13,22 @@
       modifier: 3,
       slideShadows: false,
       }"
+      :initialSlide="1"
       :pagination="false"
       :modules="modules"
       class="feedback-carousel-swiper"
   >
     <div class="feedback-carousel-swiper__button-prev">
-      <img src="../assets/images/arrows/about-us-arrow-pointer.png" alt="arrow">
-      <img src="../assets/images/arrows/about-us-arrow-stick.png" alt="arrow">
+      <img
+          src="../assets/images/arrows/arrow-feedback.png"
+          alt="arrow"
+      >
     </div>
     <div class="feedback-carousel-swiper__button-next">
-      <img src="../assets/images/arrows/about-us-arrow-pointer.png" alt="arrow">
-      <img src="../assets/images/arrows/about-us-arrow-stick.png" alt="arrow">
+      <img
+          src="../assets/images/arrows/arrow-feedback.png"
+          alt="arrow"
+      >
     </div>
     <swiper-slide
         v-for="(feedback) in feedbacks"
@@ -81,38 +86,22 @@ export default {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
     z-index: 10;
+    &:hover {
+      fill: black;
+    }
     &.swiper-button-disabled {
       opacity: 0.3;
       cursor: default;
     }
     &.feedback-carousel-swiper__button-prev {
       left: 100px;
-      img:first-child {
-        position: absolute;
-        left: 2px;
-      }
-      img:last-child {
-        z-index: -1;
-        opacity: 0.8;
-      }
     }
     &.feedback-carousel-swiper__button-next {
       right: 100px;
-      img:first-child {
+      img {
         transform: rotate(180deg);
-        position: absolute;
-        right: 2px;
-      }
-      img:last-child {
-        z-index: -1;
-        opacity: 0.8;
       }
     }
   }

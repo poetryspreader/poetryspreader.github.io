@@ -23,8 +23,9 @@ export default {
   transition: 0.2s;
   z-index: 1;
   &:hover {
-    background-color: var(--main-color-white);
-    color: var(--main-color-dark-grey);
+    background-color: var(--main-color-sand);
+    color: var(--main-color-grey-dark);
+    border: 1px solid var(--main-color-sand);
   }
 }
 </style>

@@ -60,7 +60,7 @@ export default {
   &__title {
     font-size: 20px;
     font-family: var(--main-font-playfair-display);
-    color: var(--main-color-dark-grey);
+    color: var(--main-color-grey-dark);
   }
   &__description {
     margin-top: 15px;

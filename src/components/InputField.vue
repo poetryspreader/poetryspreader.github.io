@@ -15,12 +15,13 @@
       @blur="toggleActive(false)"
     >
     <input
-        v-if="field.inputType === 'message'"
-        :class="{ 'full-width': field.fullWidth, 'active': isActive }"
-        :type="field.inputType"
-        :placeholder="field.placeholder ?? ''"
-        @focus="toggleActive(true)"
-        @blur="toggleActive(false)"
+      v-if="field.inputType === 'message'"
+      class="message"
+      :class="{ 'full-width': field.fullWidth, 'active': isActive }"
+      :type="field.inputType"
+      :placeholder="field.placeholder ?? ''"
+      @focus="toggleActive(true)"
+      @blur="toggleActive(false)"
     >
   </div>
 </template>
@@ -71,6 +72,9 @@ export default {
     &.active {
       border-bottom: 1px solid var(--main-color-black);
     }
+    &.message {
+      padding: 15px 0 85px 0;
+  }
   }
 }
 

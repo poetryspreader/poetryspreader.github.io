@@ -26,8 +26,8 @@ import LanguageSwitcher from '../LanguageSwitcher.vue';
 export default {
   data() {
     return {
-      promoTitle: 'Администрируемый главный текст H1',
-      promoSubTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac lorem semper, hendrerit nisl sagittis, tempor felis. Fusce sit amet placerat dolor.'
+      promoTitle: 'Добро пожаловать в ресторан VILAVI!',
+      promoSubTitle: 'Приветствие на берегу удовольствий: Откройте двери в мир утонченной гастрономии и непревзойденного уюта.'
     }
   },
   components: {
@@ -96,6 +96,7 @@ export default {
     height: 88px;
     width: 87%;
     max-width: 1688px;
+    border-radius: 130px 130px 0 0;
     background-color: var(--main-color-white);
     z-index: 1;
   }

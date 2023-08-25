@@ -42,7 +42,7 @@ export default {
   &__description {
     margin: 12px 0 0 0;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     color: var(--main-color-white);
   }
   &__blot {
