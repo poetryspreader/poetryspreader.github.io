@@ -3,6 +3,9 @@
     <div class="main-title">
       {{ title }}
     </div>
+<!--    <div class="vacancy-form__email">-->
+<!--      {{ email.label }}<a href="#">{{ email.link }}</a>-->
+<!--    </div>-->
     <div class="vacancy-form__fields">
       <InputField
           v-for="field in formFields"
@@ -12,9 +15,6 @@
       />
     </div>
     <MainButton class="vacancy-form__btn" :title="submitButton" />
-    <div class="vacancy-form__email">
-      {{ email.label }}<a href="#">{{ email.link }}</a>
-    </div>
   </form>
 </template>
 <script>
@@ -65,7 +65,7 @@ export default {
   display: flex;
   flex-direction: column;
   .main-title {
-    margin: 0 0 50px 0;
+    margin: 0 0 45px 0;
   }
   &__fields {
     display: grid;
@@ -78,7 +78,7 @@ export default {
     margin-left: auto;
   }
   &__email {
-    margin: 30px 0 0 0;
+    margin: 15px 0 0 0;
     font-size: 16px;
     font-weight: 400;
     color: var(--main-color-grey-dark);

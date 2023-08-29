@@ -16,20 +16,10 @@
       :initialSlide="1"
       :pagination="false"
       :modules="modules"
-      class="feedback-carousel-swiper"
+      class="feedback-carousel"
   >
-    <div class="feedback-carousel-swiper__button-prev">
-      <img
-          src="../assets/images/arrows/arrow-feedback.png"
-          alt="arrow"
-      >
-    </div>
-    <div class="feedback-carousel-swiper__button-next">
-      <img
-          src="../assets/images/arrows/arrow-feedback.png"
-          alt="arrow"
-      >
-    </div>
+    <ArrowFeedback class="prev" />
+    <ArrowFeedback class="next" />
     <swiper-slide
         v-for="(feedback) in feedbacks"
         class="swiper-slide"
@@ -43,6 +33,7 @@
 import FeedbackCard from './FeedbackCard.vue'
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import ArrowFeedback from "@/components/icons/ArrowFeedback.vue";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -51,7 +42,7 @@ import 'swiper/css/pagination';
 
 export default {
   components: {
-    Swiper, SwiperSlide, FeedbackCard
+    Swiper, SwiperSlide, FeedbackCard, ArrowFeedback
   },
   data() {
     return {
@@ -62,8 +53,8 @@ export default {
       ],
       swiperInstance: null,
       swiperNavigation: {
-        nextEl: ".feedback-carousel-swiper__button-next",
-        prevEl: ".feedback-carousel-swiper__button-prev",
+        nextEl: ".next",
+        prevEl: ".prev",
       }
     }
   },
@@ -76,33 +67,38 @@ export default {
 }
 </script>
 <style lang="scss">
-.feedback-carousel-swiper {
+.feedback-carousel {
   position: relative;
   margin: 60px 0 0 0;
   padding: 0 70px;
   width: 100%;
-  &__button-prev,
-  &__button-next {
+  .prev,
+  .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
     z-index: 10;
+    path {
+      transition: fill 0.2s;
+      fill: var(--main-color-brown);
+    }
     &:hover {
       fill: black;
+      path {
+        fill: var(--main-color-grey-dark)
+      }
     }
     &.swiper-button-disabled {
       opacity: 0.3;
       cursor: default;
     }
-    &.feedback-carousel-swiper__button-prev {
+    &.prev {
       left: 100px;
     }
-    &.feedback-carousel-swiper__button-next {
+    &.next {
       right: 100px;
-      img {
-        transform: rotate(180deg);
-      }
+      transform: rotate(180deg);
     }
   }
 }

@@ -10,10 +10,10 @@
           <LanguageSwitcher />
         </div>
       </div>
-      <div class="promo__title">
+      <div class="promo__title" ref="title">
         {{ promoTitle }}
       </div>
-      <div class="promo__subtitle">
+      <div class="promo__subtitle" ref="subtitle">
         {{ promoSubTitle }}
       </div>
     </div>
@@ -29,6 +29,12 @@ export default {
       promoTitle: 'Добро пожаловать в ресторан VILAVI!',
       promoSubTitle: 'Приветствие на берегу удовольствий: Откройте двери в мир утонченной гастрономии и непревзойденного уюта.'
     }
+  },
+  mounted() {
+    window.addEventListener('scroll', () => {
+      this.$refs.title.style.transform = `translateY(${window.scrollY * 0.2}px)`;
+      this.$refs.subtitle.style.transform = `translateY(${window.scrollY * 0.2}px)`;
+    });
   },
   components: {
     LanguageSwitcher,
@@ -76,6 +82,7 @@ export default {
     color: var(--main-color-white);
     line-height: 1;
     position: relative;
+    transition: transform 0.3s ease-out;
     z-index: 1;
   }
   &__subtitle {
@@ -86,6 +93,7 @@ export default {
     color: var(--main-color-white);
     line-height: 38.5px;
     position: relative;
+    transition: transform 0.5s ease-out;
     z-index: 1;
   }
   &__rectangle {
