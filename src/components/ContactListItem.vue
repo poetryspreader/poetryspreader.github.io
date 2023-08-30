@@ -1,11 +1,11 @@
 <template>
   <div class="contact-list-item">
     <div class="contact-list-item__label">
-      <font-awesome-icon
-          class="contact-list-item__icon"
-          aria-hidden="true"
-          :icon="contact.icon"
-      />
+<!--      <font-awesome-icon-->
+<!--          class="contact-list-item__icon"-->
+<!--          aria-hidden="true"-->
+<!--          :icon="contact.icon"-->
+<!--      />-->
       {{ contact.label }}
     </div>
     <div class="contact-list-item__description">
