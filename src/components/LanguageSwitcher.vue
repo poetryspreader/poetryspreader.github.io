@@ -23,7 +23,7 @@
 export default {
   data() {
     return {
-      languages: ['ENG', 'LV', 'RUS'],
+      languages: ['en', 'lv', 'ru'],
       currentLanguageIndex: 0,
       showLanguages: false
     }
@@ -33,6 +33,7 @@ export default {
       this.showLanguages = !this.showLanguages;
     },
     selectLanguage(language) {
+      this.$i18n.locale = language;
       this.currentLanguageIndex = this.languages.indexOf(language);
       this.showLanguages = false;
     },

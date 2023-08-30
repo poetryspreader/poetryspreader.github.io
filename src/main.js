@@ -1,12 +1,8 @@
 import './assets/main.scss'
 
-/* import the fontawesome core */
+// icons
 import { library } from '@fortawesome/fontawesome-svg-core'
-
-/* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-/* import specific icons */
 import {
     faMapMarker,
     faClock,
@@ -14,7 +10,6 @@ import {
     faEnvelope
 } from '@fortawesome/free-solid-svg-icons'
 
-/* add icons to the library */
 library.add(
     faMapMarker,
     faClock,
@@ -22,12 +17,28 @@ library.add(
     faEnvelope
 )
 
-
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+import { createI18n } from 'vue-i18n';
+
+
+// languages
+import enMessages from './locales/en.json';
+import ruMessages from './locales/ru.json';
+
+const i18n = createI18n({
+    locale: 'en',
+    fallbackLocale: 'en',
+    messages: {
+        en: enMessages,
+        ru: ruMessages
+    },
+});
+
 
 createApp(App)
     .use(router)
+    .use(i18n)
     .component('font-awesome-icon', FontAwesomeIcon)
     .mount('#app')

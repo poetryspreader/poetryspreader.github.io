@@ -5,7 +5,7 @@
       :key="item.title"
       class="nav-bar__link"
     >
-      {{ item.title }}
+      {{ $t(`promo.nav.${item.title}`) }}
     </div>
   </div>
 </template>
@@ -17,19 +17,19 @@ export default {
     return {
       navItems: [
         {
-          title: 'О нас'
+          title: 'aboutUs'
         },
         {
-          title: 'Меню'
+          title: 'menu'
         },
         {
-          title: 'Банкет'
+          title: 'banquet'
         },
         {
-          title: 'Вакансии'
+          title: 'vacancies'
         },
         {
-          title: 'Контакты'
+          title: 'contacts'
         }
       ]
     }

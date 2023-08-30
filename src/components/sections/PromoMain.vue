@@ -11,10 +11,10 @@
         </div>
       </div>
       <div class="promo__title" ref="title">
-        {{ promoTitle }}
+        {{ $t('promo.title') }}
       </div>
       <div class="promo__subtitle" ref="subtitle">
-        {{ promoSubTitle }}
+        {{ $t('promo.subTitle') }}
       </div>
     </div>
     <div class="promo__rectangle"></div>
@@ -31,6 +31,7 @@ export default {
     }
   },
   mounted() {
+    console.log(this.$i18n.messages);
     window.addEventListener('scroll', () => {
       this.$refs.title.style.transform = `translateY(${window.scrollY * 0.2}px)`;
       this.$refs.subtitle.style.transform = `translateY(${window.scrollY * 0.2}px)`;
