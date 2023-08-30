@@ -1,0 +1,25 @@
+.pre-fade {
+    opacity: 0;
+    filter: blur(3px);
+    transition: all 1.5s;
+    &-left {
+        transform: translateX(-100%);
+    }
+    &-right {
+        transform: translateX(100%);
+    }
+    &-top {
+        transform: translateY(100%);
+    }
+    &-bottom {
+        transform: translateY(-100%);
+    }
+}
+
+
+.fade {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+

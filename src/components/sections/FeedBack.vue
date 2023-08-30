@@ -1,5 +1,5 @@
 <template>
-  <div class="feedback">
+  <section class="feedback">
     <div class="container">
       <div class="main-category">
         {{ mainCategory }}
@@ -9,7 +9,7 @@
       </div>
     </div>
     <feedback-carousel :feedbacks="feedbacks" />
-  </div>
+  </section>
 </template>
 <script>
 import FeedbackCarousel from "@/components/FeedbackCarousel.vue";

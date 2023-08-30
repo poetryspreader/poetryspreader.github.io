@@ -1,10 +1,10 @@
 <template>
   <section class="menu">
     <div class="container">
-      <div class="main-category">
+      <div class="main-category pre-fade pre-fade-left">
         {{ menuTitle }}
       </div>
-      <div class="main-title">
+      <div class="main-title pre-fade pre-fade-left">
         {{ menuSubTitle }}
       </div>
       <MealCatalogue />
@@ -20,10 +20,14 @@
 <script>
 import MealCatalogue from '../MealCatalogue.vue';
 import MainButton from '../MainButton.vue';
+import IntersectionObserverMixin from "@/utility/IntersectionObserverMixin";
 export default {
   components: {
     MealCatalogue, MainButton
   },
+  mixins: [
+      IntersectionObserverMixin
+  ],
   data() {
     return {
       menuTitle: 'меню',
@@ -51,5 +55,14 @@ export default {
     right: 0;
     z-index: 1;
   }
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
 }
 </style>

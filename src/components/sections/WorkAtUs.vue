@@ -1,12 +1,12 @@
 <template>
-  <div class="work-at-us">
+  <section class="work-at-us">
     <div class="container">
       <div class="work-at-us__wrapper">
         <VacancyCarousel />
         <VacancyForm />
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import VacancyCarousel from "@/components/VacancyCarousel.vue";

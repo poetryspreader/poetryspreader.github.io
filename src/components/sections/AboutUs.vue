@@ -1,5 +1,5 @@
 <template>
-  <div class="about-us">
+  <section class="about-us">
     <div class="container">
       <div class="about-us__wrapper">
         <div>
@@ -47,7 +47,7 @@
     </div>
     <img class="about-us__stick" src="../../assets/images/elements/AboutUsStick.png" alt="Stick"
     >
-  </div>
+  </section>
 </template>
 <script>
 import MainButton from "@/components/MainButton.vue";
