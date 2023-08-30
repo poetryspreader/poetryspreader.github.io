@@ -4,7 +4,7 @@
         v-for="index in feedback.starAmount"
         :key="index"
         class="feedback-card__star"
-        src="../assets/images/elements/FeedbackStar.png "
+        src="../assets/images/elements/FeedbackStar.png"
         alt="feedback-star"
     >
     <div class="feedback-card__text">

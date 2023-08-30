@@ -3,7 +3,7 @@
     <img
       v-if="meal.image"
       class="meal-card__image"
-      :src="'../assets/images/food/' + meal.image"
+      :src="imageUrl(meal.image)"
       :alt="meal.title"
     >
     <div class="meal-card__wrapper">
@@ -28,6 +28,11 @@ export default {
     meal: {
       type: Object,
       required: true
+    }
+  },
+  methods: {
+    imageUrl(imageName) {
+      return new URL(`../assets/images/food/${imageName}`, import.meta.url).href;
     }
   }
 }
