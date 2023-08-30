@@ -3,7 +3,7 @@
     <img
       v-if="meal.image"
       class="meal-card__image"
-      :src="'src/assets/images/food/' + meal.image"
+      :src="'../../assets/images/food/' + meal.image"
       :alt="meal.title"
     >
     <div class="meal-card__wrapper">
