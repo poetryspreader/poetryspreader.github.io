@@ -6,7 +6,7 @@
       v-for="(meal) in meals"
       :key="meal.title"
       :meal="meal"
-      class="pre-fade pre-fade-left"
+      class="pre-fade"
     />
   </div>
 </template>

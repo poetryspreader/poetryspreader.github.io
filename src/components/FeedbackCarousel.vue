@@ -11,12 +11,12 @@
       stretch: 0,
       depth: 1,
       modifier: 3,
-      slideShadows: false,
+      slideShadows: false
       }"
       :initialSlide="1"
       :pagination="false"
       :modules="modules"
-      class="feedback-carousel"
+      class="feedback-carousel pre-fade"
   >
     <ArrowFeedback class="prev" />
     <ArrowFeedback class="next" />

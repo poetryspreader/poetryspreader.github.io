@@ -3,13 +3,13 @@
     <div class="container">
       <div class="about-us__wrapper">
         <div>
-          <div class="main-category">
+          <div class="main-category pre-fade pre-fade-left">
             {{ mainCategory }}
           </div>
-          <div class="main-title">
+          <div class="main-title pre-fade pre-fade-left">
             {{ mainTitle }}
           </div>
-          <div class="about-us__text">
+          <div class="about-us__text pre-fade pre-fade-left">
             <span>
               История кафе VILAVI начинается с 2007 года.
             </span>
@@ -38,15 +38,14 @@
             Дорогие друзья, мы с нетерпением ждем Вас к нам в гости круглый год!
           </div>
           <MainButton
-              class="about-us__btn"
+              class="about-us__btn pre-fade pre-fade-left"
               :title="buttonTitle"
           />
         </div>
-        <img src="../../assets/images/about-us.png" alt="about-us">
+        <img class="pre-fade pre-fade-right" src="../../assets/images/about-us.png" alt="about-us">
       </div>
     </div>
-    <img class="about-us__stick" src="../../assets/images/elements/AboutUsStick.png" alt="Stick"
-    >
+    <img class="about-us__stick" src="../../assets/images/elements/AboutUsStick.png" alt="Stick">
   </section>
 </template>
 <script>

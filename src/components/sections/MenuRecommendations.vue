@@ -1,10 +1,10 @@
 <template>
   <section class="menu">
     <div class="container">
-      <div class="main-category pre-fade pre-fade-left">
+      <div class="main-category pre-fade">
         {{ menuTitle }}
       </div>
-      <div class="main-title pre-fade pre-fade-left">
+      <div class="main-title pre-fade">
         {{ menuSubTitle }}
       </div>
       <MealCatalogue />

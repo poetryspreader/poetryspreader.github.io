@@ -6,6 +6,7 @@
         v-for="(banquet) in banquets"
         :key="banquet.title"
         :banquet="banquet"
+        class="pre-fade pre-fade-top"
     />
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div class="vacancy-carousel">
-    <div class="vacancy-carousel__blot">
+    <div class="vacancy-carousel__blot pre-fade">
       <img src="../assets/images/elements/blot.png" alt="blot">
       <div class="vacancy-carousel__blot-text">{{ category }}</div>
     </div>
@@ -17,7 +17,7 @@
           stretch: 0,
           depth: 1,
           modifier: 3,
-          slideShadows: false,
+          slideShadows: false
           }"
         :pagination="false"
         :modules="modules"

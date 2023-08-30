@@ -6,7 +6,7 @@ export default {
             })
         })
 
-        const hiddenElements = document.querySelectorAll('.pre-fade-left, .pre-fade-right, .pre-fade-bottom, .pre-fade-bottom')
+        const hiddenElements = document.querySelectorAll('.pre-fade, .pre-fade-left, .pre-fade-right, .pre-fade-bottom, .pre-fade-bottom')
 
         hiddenElements.forEach((el) => observer.observe(el))
     }
