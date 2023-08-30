@@ -31,6 +31,9 @@ export default {
     width: 55%;
     height: 100%;
     background-color: var(--main-background-color-beige);
+    background-image: url('../../assets/images/elements/WorkAtUsFlower.png'); /* Replace with your image path */
+    background-position: bottom right;
+    background-repeat: no-repeat;
     z-index: -1;
   }
   &__wrapper {

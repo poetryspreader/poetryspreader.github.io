@@ -18,7 +18,7 @@
       <div class="copyright__label">
         {{ copyright.label }}
       </div>
-      <img :src="'src/assets/images/' + copyright.support" alt="copyright-support">
+      <img :src="imageUrl(copyright.image)" alt="copyright-support">
     </div>
   </div>
 </template>
@@ -34,8 +34,13 @@ export default {
       more: 'больше информации',
       copyright: {
         label: 'Copyrights © VILAVI 2022',
-        support: 'copyright-support.png'
+        image: 'copyright-support.png'
       }
+    }
+  },
+  methods: {
+    imageUrl(imageName) {
+      return new URL(`../../assets/images/${imageName}`, import.meta.url).href;
     }
   }
 }
