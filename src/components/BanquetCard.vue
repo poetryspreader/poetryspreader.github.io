@@ -1,7 +1,7 @@
 <template>
   <div
       class="banquet-card"
-      :style="{ background: `url(${banquet.image}) no-repeat 100%/cover` }"
+      :style="{ background: `url(${imageUrl(banquet.image)}) no-repeat 100%/cover` }"
   >
     <div class="banquet-card__title">
       {{ banquet.title }}
@@ -21,6 +21,11 @@ export default {
     banquet: {
       type: Object,
       required: true
+    }
+  },
+  methods: {
+    imageUrl(imageName) {
+      return new URL(`../assets/images/hall/${imageName}`, import.meta.url).href;
     }
   }
 }

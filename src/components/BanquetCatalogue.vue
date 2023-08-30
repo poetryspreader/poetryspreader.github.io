@@ -17,13 +17,13 @@ export default {
       banquets: [
         {
           title: '25 человек',
-          image: 'src/assets/images/hall/25-person.png',
+          image: '25-person.png',
           hall: 'малый зал'
         },
         {
           title: '50 человек',
           description: 'от 25 евро на человека',
-          image: 'src/assets/images/hall/50-person.png',
+          image: '50-person.png',
           hall: 'большой зал'
         }
       ]
