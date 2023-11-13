@@ -2,15 +2,15 @@
   <section class="menu">
     <div class="container">
       <div class="main-category pre-fade">
-        {{ menuTitle }}
+        {{ $t('menu.pre-title') }}
       </div>
       <div class="main-title pre-fade">
-        {{ menuSubTitle }}
+        {{ $t('menu.title') }}
       </div>
       <MealCatalogue />
       <MainButton
         class="menu__btn"
-        :title="buttonTitle"
+        :title="'menu.btn'"
       />
     </div>
     <img class="menu__flower" src="../../assets/images/elements/MenuRecommendationsFlower.png" alt="Flower">

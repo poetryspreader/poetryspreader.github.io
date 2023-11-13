@@ -2,15 +2,15 @@
   <section class="banquet-choice">
     <div class="container">
       <div class="main-category">
-        {{ mainCategory }}
+        {{ $t('banquet.pre-title') }}
       </div>
       <div class="banquet-choice__category main-title">
-        {{ mainTitle }}
+        {{ $t('banquet.title') }}
       </div>
       <banquet-catalogue />
       <main-button
           class="banquet-choice__btn"
-          :title="buttonTitle"
+          :title="'banquet.btn'"
       />
     </div>
     <img class="banquet-choice__flower" src="../../assets/images/elements/BanquetFlower.png" alt="flower">

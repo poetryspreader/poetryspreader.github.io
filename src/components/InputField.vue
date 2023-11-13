@@ -4,13 +4,12 @@
       class="input-field__label"
       :class="{ 'active': isActive }"
     >
-      {{ field.label }}
+      {{ $t(field.label) }}
     </div>
     <input
       v-if="field.inputType === 'text' || field.inputType === 'email'"
       :class="{ 'full-width': field.fullWidth, 'active': isActive }"
       :type="field.inputType"
-      :placeholder="field.placeholder ?? ''"
       @focus="toggleActive(true)"
       @blur="toggleActive(false)"
     >
@@ -19,7 +18,7 @@
       class="message"
       :class="{ 'full-width': field.fullWidth, 'active': isActive }"
       :type="field.inputType"
-      :placeholder="field.placeholder ?? ''"
+      :placeholder="$t(`${field.placeholder}`) ?? ''"
       @focus="toggleActive(true)"
       @blur="toggleActive(false)"
     >

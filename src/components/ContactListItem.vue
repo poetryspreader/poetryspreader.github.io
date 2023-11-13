@@ -6,7 +6,7 @@
           aria-hidden="true"
           :icon="contact.icon"
       />
-      {{ contact.label }}
+      {{ $t(contact.label) }}
     </div>
     <div class="contact-list-item__description">
       {{ contact.description }}

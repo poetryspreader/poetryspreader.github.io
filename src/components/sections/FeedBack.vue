@@ -2,10 +2,10 @@
   <section class="feedback">
     <div class="container">
       <div class="main-category">
-        {{ mainCategory }}
+        {{ $t('feedback.pre-title') }}
       </div>
       <div class="main-title">
-        {{ mainTitle }}
+        {{ $t('feedback.title') }}
       </div>
     </div>
     <feedback-carousel :feedbacks="feedbacks" />

@@ -2,10 +2,10 @@
   <div class="vacancy-carousel">
     <div class="vacancy-carousel__blot pre-fade">
       <img src="../assets/images/elements/blot.png" alt="blot">
-      <div class="vacancy-carousel__blot-text">{{ category }}</div>
+      <div class="vacancy-carousel__blot-text">{{ $t('vacancies.pre-title') }}</div>
     </div>
     <div class="main-title">
-      {{ title }}
+      {{ $t('vacancies.title') }}
     </div>
     <swiper
         :grabCursor="true"
@@ -28,15 +28,15 @@
         <img class="next" src="../assets/images/arrows/work-at-us-arrow.png" alt="arrow">
       </div>
       <swiper-slide
-          v-for="(vacancy) in vacancies"
+          v-for="number in 4"
           class="vacancy-carousel__swiper-slide"
-          :key="vacancy.title"
+          :key="number"
       >
         <div class="vacancy-carousel__item-title">
-          {{ vacancy.title }}
+          {{ $t(`vacancies.options.${number}.label`) }}
         </div>
         <div class="vacancy-carousel__item-text">
-          {{ vacancy.text }}
+          {{ $t(`vacancies.options.${number}.description`) }}
         </div>
       </swiper-slide>
     </swiper>

@@ -31,7 +31,6 @@ export default {
     }
   },
   mounted() {
-    console.log(this.$i18n.messages);
     window.addEventListener('scroll', () => {
       this.$refs.title.style.transform = `translateY(${window.scrollY * 0.2}px)`;
       this.$refs.subtitle.style.transform = `translateY(${window.scrollY * 0.2}px)`;

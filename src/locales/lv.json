@@ -1,0 +1,136 @@
+{
+    "promo": {
+        "nav": {
+          "aboutUs": "par mums",
+          "menu": "ēdienkarte",
+          "banquet": "bankets",
+          "vacancies": "vakances",
+          "contacts": "kontakti"
+        },
+        "title": "Laipni lūdzam restorānā VILAVI!",
+        "subTitle": "Sveicieni prieka krastā: Atveriet durvis uz pasauli ar izsmalcinātu gastronomiju un nepārspējamu komfortu."
+    },
+    "menu": {
+        "pre-title": "ēdienkarte",
+        "title": "Šefpavēle",
+        "btn": "skatīt visu ēdienkarti",
+        "meals": {
+            "carp": {
+                "category": "Zivju ēdieni uz oglēm",
+                "title": "Karpis uz oglēm",
+                "description": "Grilēta karpja cienītāji novērtēs to."
+            },
+          "pork-shank": {
+            "category": "Karsti gaļas ēdieni",
+            "title": "Dārza-stila cūkas ceppa",
+            "description": "Cūkas ceppa cepta krāsnī dārza stilā. Pasniegts ar sīpolu gredzeniem un garšīgu krēmīgu mērci."
+          },
+          "borsch": {
+            "category": "Zupas",
+            "title": "Boršs",
+            "description": "Boršs pēc labākās vecmāmiņas receptes. Pasniegts ar skābo krējumu, zaļumiem, pašu ceptu speķi, tumšo maizi un ķiplokiem."
+          },
+          "caesar": {
+            "category": "Sālāti",
+            "title": "Cēzara salāts",
+            "description": "Klasiskais Cēzara salāts ar vistas gaļu. Varat aizstāt vistas gaļu ar lasi, garneļiem vai bekonu pēc savas gaumes. Mēs piedāvājam katram atbilstošu izvēli."
+          },
+          "bear-plate": {
+            "category": "Alus uzkodas",
+            "title": "Alus šķīvis",
+            "description": "Fantastiska uzkoda ne tikai kopā ar alu, bet arī, gaidot galvenos ēdienus kopā ar ģimeni. Katrs atradīs kaut ko atbilstošu savam gaumei."
+          },
+          "cheesecake": {
+            "category": "Deserti",
+            "title": "Siera kūka",
+            "description": "Pēc bieza pusdiena pienāk laiks desertam. Mūsu burvīgā siera kūka ar šokolādes mērci būs lielisks noslēpums jūsu maltītes noslēpumam."
+          }
+        }
+    },
+    "about-us": {
+        "pre-title": "PAR MUMS",
+        "title": "Cafe VILAVI vēsture",
+        "btn": "vairāk",
+        "p-1": "Cafe VILAVI vēsture sākas 2007. gadā.",
+        "p-2": "Mūsu kafejnīcas īpašo atmosfēru nosaka tā atrašanās vieta.",
+        "p-3": "Cafe VILAVI atrodas Rīgā, Mežciema rajona centrā: rajons ir ieskauts ar mežiem un ezeriem. Meža takas un Bikernieku šoseja palīdzēs jums iegūt apetīti. Mājīgā atmosfēra ļaus jums atpūsties un baudīt dažādus ēdienus, dzērienus un aromātiskos kebabus gan zālēs, gan vasaras verandā visu gadu.",
+        "p-4": "Vairāk nekā 10 gadus kafejnīca priecē savus viesus ar vienu no labākajiem kebabiem Rīgā, kā arī plašu karsto zivju un gaļas ēdienu klāstu.",
+        "p-5": "Nedēļas dienās šeit varat ieturēt lētu un ļoti garšīgu pusdienas maltīti.",
+        "p-6": "Mēs novērtējam katru mūsu viesi un ievērojam mūsu pamatvērtības: lielisku apkalpošanu, garšīgu ēdienu, pieejamas cenas un mājīgu atmosfēru!",
+        "p-7": "Dārgie draugi, mēs ar prieku sagaidīsim jūs visu gadu!"
+    },
+    "banquet": {
+        "pre-title": "BANKETS",
+        "title": "Mēs piedāvājam banketa zāles jūsu pasākumam",
+        "btn": "uzzināt vairāk",
+        "options": {
+            "25": {
+                "title": "25 personas",
+                "hall": "mazā zāle"
+            },
+            "50": {
+                "title": "50 personas",
+                "hall": "lielā zāle",
+                "description": "no 25 eiro par personu"
+            }
+        }
+    },
+    "vacancies": {
+        "pre-title": "vakančas",
+        "title": "Pašlaik meklējam",
+        "options": {
+          "1": {
+                "label": "Servitūts",
+                "description": "Mums ir lieliska iespēja ambicioziem, strādīgiem, jauniem cilvēkiem ar atbildības sajūtu un vēlmi strādāt komandā, lai parādītu sevi no labākās puses."
+          },
+          "2": {
+                "label": "Šefs",
+                "description": "Mums ir lieliska iespēja ambicioziem, strādīgiem, jauniem cilvēkiem ar atbildības sajūtu un vēlmi strādāt komandā, lai parādītu sevi no labākās puses."
+          },
+          "3": {
+                "label": "Administrators",
+                "description": "Mums ir lieliska iespēja ambicioziem, strādīgiem, jauniem cilvēkiem ar atbildības sajūtu un vēlmi strādāt komandā, lai parādītu sevi no labākās puses."
+          },
+          "4": {
+                "label": "Direktors",
+                "description": "Mums ir lieliska iespēja ambicioziem, strādīgiem, jauniem cilvēkiem ar atbildības sajūtu un vēlmi strādāt komandā, lai parādītu sevi no labākās puses."
+          }
+        }
+    },
+    "form": {
+        "title": "Atstāt pieprasījumu",
+        "btn": "pieteikties",
+        "fields": {
+            "1": {
+                "label": "Vārds"
+            },
+            "2": {
+                "label": "Amats"
+            },
+            "3": {
+                "label": "E-pasts"
+            },
+            "4": {
+                "label": "Telefons"
+            },
+            "5": {
+                "label": "Ziņa",
+                "placeholder": "Jūsu ziņa..."
+            }
+        }
+    },
+    "feedback": {
+        "pre-title": "ATSAUKSMES",
+        "title": "Ko viesi saka par mums?"
+    },
+    "contacts": {
+        "title": "kontakti",
+        "options": {
+            "address": "adrese",
+            "time": "laiks",
+            "phone": "tālrunis",
+            "email": "e-pasts"
+        },
+        "more": "vairāk"
+    }
+}

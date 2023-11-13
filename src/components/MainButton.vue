@@ -1,6 +1,6 @@
 <template>
     <div class="button">
-      {{ title }}
+      {{ $t(title) }}
     </div>
 </template>
 <style lang="scss">

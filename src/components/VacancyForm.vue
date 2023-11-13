@@ -1,11 +1,8 @@
 <template>
   <form class="vacancy-form">
     <div class="main-title">
-      {{ title }}
+      {{ $t('form.title') }}
     </div>
-<!--    <div class="vacancy-form__email">-->
-<!--      {{ email.label }}<a href="#">{{ email.link }}</a>-->
-<!--    </div>-->
     <div class="vacancy-form__fields">
       <InputField
           v-for="field in formFields"
@@ -14,7 +11,7 @@
           :class="{ 'full-width': field.inputType === 'message' }"
       />
     </div>
-    <MainButton class="vacancy-form__btn" :title="submitButton" />
+    <MainButton class="vacancy-form__btn" :title="'form.btn'" />
   </form>
 </template>
 <script>
@@ -26,36 +23,30 @@ export default {
   },
   data() {
     return {
-      title: 'Оставьте заявку',
       formFields: [
         {
-          label: 'Имя',
+          label: 'form.fields.1.label',
           inputType: 'text'
         },
         {
-          label: 'Позиция',
+          label: 'form.fields.2.label',
           inputType: 'text'
         },
         {
-          label: 'Эл. почта',
+          label: 'form.fields.3.label',
           inputType: 'text'
         },
         {
-          label: 'Тел. номер',
+          label: 'form.fields.4.label',
           inputType: 'text'
         },
         {
-          label: 'Сообщение',
-          placeholder: 'Ваше сообщение...',
+          label: 'form.fields.5.label',
+          placeholder: 'form.fields.5.placeholder',
           inputType: 'message',
           fullWidth: true
         }
-      ],
-      submitButton: 'Оставить заявку',
-      email: {
-        label: 'Или отправляйте заявку на ',
-        link: 'info@vilavi.lv'
-      }
+      ]
     }
   }
 }

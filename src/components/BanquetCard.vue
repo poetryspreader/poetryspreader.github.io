@@ -4,14 +4,14 @@
       :style="{ background: `url(${imageUrl(banquet.image)}) no-repeat 100%/cover` }"
   >
     <div class="banquet-card__title">
-      {{ banquet.title }}
+      {{ $t(banquet.title) }}
     </div>
     <div v-if="banquet.description" class="banquet-card__description">
-      {{ banquet.description }}
+      {{ $t(banquet.description) }}
     </div>
     <div class="banquet-card__blot">
       <img src="../assets/images/elements/blot.png" alt="blot">
-      <div class="banquet-card__blot-text">{{ banquet.hall }}</div>
+      <div class="banquet-card__blot-text">{{ $t(banquet.hall) }}</div>
     </div>
   </div>
 </template>

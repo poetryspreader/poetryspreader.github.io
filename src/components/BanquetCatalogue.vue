@@ -6,7 +6,6 @@
         v-for="(banquet) in banquets"
         :key="banquet.title"
         :banquet="banquet"
-        class="pre-fade pre-fade-top"
     />
   </div>
 </template>
@@ -17,15 +16,15 @@ export default {
     return {
       banquets: [
         {
-          title: '25 человек',
+          title: 'banquet.options.25.title',
           image: '25-person.png',
-          hall: 'малый зал'
+          hall: 'banquet.options.25.hall'
         },
         {
-          title: '50 человек',
-          description: 'от 25 евро на человека',
+          title: 'banquet.options.50.title',
+          description: 'banquet.options.50.description',
           image: '50-person.png',
-          hall: 'большой зал'
+          hall: 'banquet.options.50.hall'
         }
       ]
     }

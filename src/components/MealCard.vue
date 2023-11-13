@@ -8,16 +8,16 @@
     >
     <div class="meal-card__wrapper">
       <div class="meal-card__category">
-        {{ meal.category }}
+        {{ $t(meal.category) }}
       </div>
       <div class="meal-card__price">
         {{ meal.price }}<span>€</span>
       </div>
       <div class="meal-card__title">
-        {{ meal.title }}
+        {{ $t(meal.title) }}
       </div>
       <div class="meal-card__description">
-        {{ meal.description }}
+        {{ $t(meal.description) }}
       </div>
     </div>
   </div>

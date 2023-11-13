@@ -20,22 +20,22 @@ export default {
       contacts: [
         {
           icon: 'fa-solid fa-map-marker',
-          label: 'адрес',
+          label: 'contacts.options.address',
           description: 'Druvienas iela 30 Rīga, Latvija'
         },
         {
           icon: 'fa-solid fa-clock',
-          label: 'рабочее время',
+          label: 'contacts.options.time',
           description: 'Druvienas iela 30 Rīga, Latvija'
         },
         {
           icon: 'fa-solid fa-phone',
-          label: 'Телефон',
+          label: 'contacts.options.phone',
           description: '+371 67531500'
         },
         {
           icon: 'fa-solid fa-envelope',
-          label: 'эл. почта',
+          label: 'contacts.options.email',
           description: 'info@vilavicafe.lv'
         }
       ]

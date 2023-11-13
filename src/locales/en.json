@@ -9,5 +9,128 @@
     },
     "title": "Welcome to VILAVI restaurant!",
     "subTitle": "Greetings on the shores of pleasure: Open the doors to a world of refined gastronomy and unrivaled comfort."
+  },
+  "menu": {
+    "pre-title": "menu",
+    "title": "Chef recommends",
+    "btn": "view all menu",
+    "meals": {
+      "carp": {
+        "category": "Fish dishes on coals",
+        "title": "Carp on Coals",
+        "description": "Connoisseurs of grilled carp on the barbecue will appreciate it."
+      },
+      "pork-shank": {
+        "category": "Hot meat dishes",
+        "title": "Country-style Pork Knuckle",
+        "description": "Pork knuckle baked in the oven in a rustic style. Served with crispy onion rings and delicious creamy sauce."
+      },
+      "borsch": {
+        "category": "Soups",
+        "title": "Borscht",
+        "description": "Borscht according to the recipe of the best grandmother. Served with sour cream, herbs, homemade bacon, black bread, and garlic."
+      },
+      "caesar": {
+        "category": "Salads",
+        "title": "Caesar Salad",
+        "description": "Classic Caesar salad with chicken. You can replace chicken with salmon, shrimp, or bacon according to your taste. We cater to every preference."
+      },
+      "bear-plate": {
+        "category": "Beer snacks",
+        "title": "Beer Plate",
+        "description": "Fantastic snack not only with beer but also while waiting for your main dishes with family. Everyone will find something to their taste for their taste buds."
+      },
+      "cheesecake": {
+        "category": "Desserts",
+        "title": "Cheesecake",
+        "description": "After a hearty lunch, it's time for dessert. Our delightful cheesecake with chocolate sauce will be the perfect finale to your meal."
+      }
+    }
+  },
+  "about-us": {
+    "pre-title": "ABOUT US",
+    "title": "History of Cafe VILAVI",
+    "btn": "more",
+    "p-1": "The history of cafe VILAVI begins in 2007.",
+    "p-2": "The special atmosphere of our cafe is given by its location.",
+    "p-3": "Cafe VILAVI is located in Riga in the very center of Mežciems district: the district is surrounded by forests and lakes. Forest paths and the Bikernieki highway will help you work up an appetite. The cozy atmosphere will allow you to relax and enjoy a variety of dishes, drinks and aromatic kebab both in the halls and on the summer veranda all year round.",
+    "p-4": "For more than 10 years the cafe has been pleasing its guests with some of the best kebabs in Riga, as well as a wide range of hot fish and meat dishes.",
+    "p-5": "On weekdays you can have an inexpensive and very tasty lunch here.",
+    "p-6": "We appreciate each of our guests and adhere to our core values: excellent service, delicious food, affordable prices and cozy atmosphere!",
+    "p-7": "Dear friends, we look forward to welcoming you all year round!"
+  },
+  "banquet": {
+    "pre-title": "banquet",
+    "title": "We offer banquet halls for your event",
+    "btn": "find out more",
+    "options": {
+      "25": {
+        "title": "25 persons",
+        "hall": "small hall"
+      },
+      "50": {
+        "title": "50 persons",
+        "hall": "large hall",
+        "description": "from 25 euros per person"
+      }
+    }
+  },
+  "vacancies": {
+    "pre-title": "vacancies",
+    "title": "Сurrently looking for",
+    "options": {
+      "1": {
+        "label": "Waiter",
+        "description": "We have an excellent opportunity for ambitious, hardworking, young individuals with a sense of responsibility and a desire to work in a team and showcase themselves in the best light."
+      },
+      "2": {
+        "label": "Cook",
+        "description": "We have an excellent opportunity for ambitious, hardworking, young individuals with a sense of responsibility and a desire to work in a team and showcase themselves in the best light."
+      },
+      "3": {
+        "label": "Administrator",
+        "description": "We have an excellent opportunity for ambitious, hardworking, young individuals with a sense of responsibility and a desire to work in a team and showcase themselves in the best light."
+      },
+      "4": {
+        "label": "Director",
+        "description": "We have an excellent opportunity for ambitious, hardworking, young individuals with a sense of responsibility and a desire to work in a team and showcase themselves in the best light."
+      }
+    }
+  },
+  "form": {
+    "title": "Leave a request",
+    "btn": "apply",
+    "fields": {
+      "1": {
+        "label": "Name"
+      },
+      "2": {
+        "label": "Position"
+      },
+      "3": {
+        "label": "Email"
+      },
+      "4": {
+        "label": "Phone"
+      },
+      "5": {
+        "label": "Message",
+        "placeholder": "Your message..."
+      }
+    }
+  },
+  "feedback": {
+    "pre-title": "REVIEWS",
+    "title": "What do guests say about us?"
+  },
+  "contacts": {
+    "title": "contacts",
+    "options": {
+      "address": "address",
+      "time": "time",
+      "phone": "phone",
+      "email": "email"
+    },
+    "more": "more"
   }
 }

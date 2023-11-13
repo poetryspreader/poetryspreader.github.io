@@ -2,11 +2,11 @@
   <div class="footer">
     <div class="container">
       <div class="main-category">
-        {{ contactsLabel }}
+        {{ $t('contacts.title') }}
       </div>
       <ContactList />
       <div class="footer__more">
-        {{ more }}
+        {{ $t('contacts.more') }}
         <div class="arrow">
           <img src="../../assets/images/arrows/arrow-feedback.png" alt="arrow">
         </div>
@@ -54,17 +54,14 @@ export default {
   }
   &__more {
     cursor: pointer;
-    position: relative;
-    max-width: 185px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     color: var(--main-background-color-beige);
     text-transform: uppercase;
     font-size: 12px;
     margin: 30px 0 0 0;
     .arrow {
-      position: absolute;
-      top: 50%;
-      right: -10px;
-      transform: translateY(-50%);
       cursor: pointer;
       z-index: 10;
       img {

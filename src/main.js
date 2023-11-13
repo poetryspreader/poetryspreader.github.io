@@ -26,13 +26,15 @@ import { createI18n } from 'vue-i18n';
 // languages
 import enMessages from './locales/en.json';
 import ruMessages from './locales/ru.json';
+import lvMessages from './locales/lv.json';
 
 const i18n = createI18n({
     locale: 'en',
     fallbackLocale: 'en',
     messages: {
         en: enMessages,
-        ru: ruMessages
+        ru: ruMessages,
+        lv: lvMessages
     },
 });
 
