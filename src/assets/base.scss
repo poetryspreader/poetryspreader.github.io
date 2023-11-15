@@ -1,0 +1,23 @@
+:root {
+  /* Color Palette*/
+  --main-color-white: rgba(255, 255, 255, 1);
+  --main-color-black: rgba(0, 0, 0, 1);
+  --main-color-dark-grey: rgb(38, 38, 38);
+
+  /* Fonts */
+  --main-font-montserrat: 'Montserrat', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main-color-dark-grey);
+  min-height: 100vh;
+  color: var(--main-color-white);
+}
