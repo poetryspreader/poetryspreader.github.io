@@ -1,5 +1,10 @@
 {
   "header": {
     "logo": "renovation studio"
+  },
+  "nav-bar": {
+    "styles": "Styles",
+    "inventory": "Inventory",
+    "contacts": "Contacts"
   }
 }

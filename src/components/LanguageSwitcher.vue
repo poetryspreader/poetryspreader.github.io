@@ -30,10 +30,11 @@ export default {
   cursor: pointer;
   margin: 0 5px 0 0;
   padding: 5px 8px;
-  font-size: 30px;
+  font-size: 25px;
   transition: .4s all;
   color: white;
   text-transform: uppercase;
+  font-weight: 300;
   &:hover {
     scale: 1.1;
   }

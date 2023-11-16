@@ -1,5 +1,5 @@
 <template>
-  <div class="logo">
+  <div id='logo' class="logo">
     <img
       src="../assets/images/paint-roller.png"
       alt="scandiroom.net"
@@ -31,9 +31,9 @@ export default {
   line-height: 1;
   img {
     background-color: var(--main-color-white);
-    padding: 15px;
+    padding: 12px;
     border-radius: 20px;
-    height: 70px;
+    height: 55px;
   }
   &__label {
     margin: 0 0 0 10px;

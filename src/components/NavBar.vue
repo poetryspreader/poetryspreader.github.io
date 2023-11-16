@@ -1,5 +1,7 @@
 <template>
-  <div class="nav-bar">
+  <div
+    :class="{ 'nav-bar': true }"
+  >
     <language-switcher />
     <div class="nav-bar__catalogue">
       <div
@@ -34,10 +36,7 @@ export default {
           'label': 'nav-bar.styles'
         },
         {
-          'label': 'nav-bar.contacts'
-        },
-        {
-          'label': 'nav-bar.contacts'
+          'label': 'nav-bar.inventory'
         },
         {
           'label': 'nav-bar.contacts'
@@ -47,21 +46,33 @@ export default {
   }
 }
 </script>
-<styles lang="scss">
+<style lang="scss">
 .nav-bar {
+  padding: 7px 0;
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--main-color-dark-grey);
+  transition: transform 0.6s ease-in-out;
   &__catalogue {
     display: flex;
+    gap: 20px;
     flex-direction: row;
-    font-size: 25px;
+    font-size: 22px;
+    font-family: var(--main-font-fira-sans-condensed);
+    font-weight: 300;
+    div {
+      &:hover {
+        cursor: pointer;
+        background-color: var(--main-color-light-grey);
+      }
+    }
   }
   &__search {
-    scale: 50%;
+    scale: 2;
+    width: 50px;
   }
 }
-
-</styles>
+</style>

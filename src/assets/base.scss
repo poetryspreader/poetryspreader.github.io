@@ -3,9 +3,13 @@
   --main-color-white: rgba(255, 255, 255, 1);
   --main-color-black: rgba(0, 0, 0, 1);
   --main-color-dark-grey: rgb(38, 38, 38);
+  --main-color-light-grey: rgba(222, 222, 222, 0.09);
 
   /* Fonts */
-  --main-font-montserrat: 'Montserrat', sans-serif;
+  --main-font-zilla-slab: 'Zilla Slab', serif;
+  --main-font-dm-sans: 'DM Sans', sans-serif;
+  --main-font-lora: 'Lora', serif;
+  --main-font-fira-sans-condensed: 'Fira Sans Condensed', sans-serif;
 }
 
 *,
@@ -17,7 +21,8 @@
 }
 
 body {
-  background-color: var(--main-color-dark-grey);
+  background-color: var(--main-color-white);
   min-height: 100vh;
   color: var(--main-color-white);
+  font-family: var(--main-font-zilla-slab);
 }

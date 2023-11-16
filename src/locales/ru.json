@@ -4,6 +4,7 @@
   },
   "nav-bar": {
     "styles": "Стили",
+    "inventory": "Инвентарь",
     "contacts": "Контакты"
   }
 }
