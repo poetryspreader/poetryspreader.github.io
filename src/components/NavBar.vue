@@ -4,17 +4,18 @@
   >
     <language-switcher />
     <div class="nav-bar__catalogue">
-      <div
-        v-for="item in navItems"
-        :key="item.icon"
-        style="margin: 0 5px 0 0"
+      <router-link
+        v-for="(item) in navItems"
+        :key="item.label"
+        :class="{
+          'nav-bar__item': true,
+          'active': this.$route.fullPath === item.to ||
+          item.activeClassUnlockers && item.activeClassUnlockers.includes(this.$route.fullPath)
+        }"
+        :to="item.to"
       >
-        <a
-          target="_blank"
-        >
-          {{ $t(item.label) }}
-        </a>
-      </div>
+        {{ $t(item.label) }}
+      </router-link>
     </div>
     <font-awesome-icon
       icon="fa-solid fa-magnifying-glass"
@@ -26,20 +27,26 @@
 <script>
 import LanguageSwitcher from "@/components/LanguageSwitcher.vue";
 export default {
-    components: {
-      LanguageSwitcher
+  components: {
+    LanguageSwitcher
   },
   data() {
     return {
       navItems: [
         {
-          'label': 'nav-bar.styles'
+          'label': 'nav-bar.new',
+          'to': '/'
         },
         {
-          'label': 'nav-bar.inventory'
+          'label': 'nav-bar.tools',
+          'to': '/tools',
+          'activeClassUnlockers': [
+            '/scandinavian'
+          ]
         },
         {
-          'label': 'nav-bar.contacts'
+          'label': 'nav-bar.studio',
+          'to': '/studio'
         }
       ]
     }
@@ -48,13 +55,13 @@ export default {
 </script>
 <style lang="scss">
 .nav-bar {
-  padding: 7px 0;
+  padding: 7px 10px;
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--main-color-dark-grey);
+  background-color: var(--main-color-dark-black);
   transition: transform 0.6s ease-in-out;
   &__catalogue {
     display: flex;
@@ -63,16 +70,31 @@ export default {
     font-size: 22px;
     font-family: var(--main-font-fira-sans-condensed);
     font-weight: 300;
-    div {
+  }
+  &__item {
+    color: var(--main-color-white);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 2px 6px;
+    margin: 0 5px 0 0;
+    &:last-child {
+      margin: 0;
+    }
+    &:hover {
+      border-radius: 5px;
+      background-color: var(--main-color-grey);
+    }
+    &.active {
+      color: var(--main-color-light-grey);
+      cursor: default;
       &:hover {
-        cursor: pointer;
-        background-color: var(--main-color-light-grey);
+        background-color: var(--main-color-grey);
       }
     }
   }
   &__search {
-    scale: 2;
-    width: 50px;
+    scale: 1.7;
+    width: 35px;
   }
 }
 </style>

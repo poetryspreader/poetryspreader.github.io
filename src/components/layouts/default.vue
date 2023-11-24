@@ -1,21 +1,20 @@
 <template>
-  <transition
-    name="custom-classes-transition"
+  <div
+    v-if="this.scrollY > 75"
+    :style="{ height: this.$refs.header.clientHeight + 'px' }"
+  ></div>
+  <div
     :class="{
-      'animated fadeOutUp': this.scrollY > 230 && this.scrollingDown,
-      'animated fadeInDown': !this.scrollingDown
+      'header': true,
+      'fixed': this.scrollY > 75,
+      'slide-out-up': this.scrollY > 230 && this.scrollingDown,
+      'slide-in-down': !this.scrollingDown
     }"
+    ref="header"
   >
-    <div
-      :class="{
-        'header': true,
-        'fixed': this.scrollY > 75
-      }"
-    >
-      <Logo />
-      <nav-bar />
-    </div>
-  </transition>
+    <Logo />
+    <nav-bar />
+  </div>
   <slot></slot>
 </template>
 <script>
@@ -49,14 +48,12 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 1;
-  background-color: var(--main-color-dark-grey);
-  transition: 0.6s all;
+  z-index: 2;
+  background-color: var(--main-color-black);
+  color: var(--main-color-white);
+  transition: 0.5s all;
   .logo {
     padding: 10px;
-  }
-  slot {
-    height: 100%;
   }
 }
 
@@ -65,5 +62,14 @@ export default {
   width: 100%;
   top: -75px;
   opacity: 1;
+}
+.slide-out-up {
+  top: -150px;
+  transition-delay: 0.02s;
+}
+
+.slide-in-down {
+  top: -75px;
+  transition-delay: 0.2s;
 }
 </style>

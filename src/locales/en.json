@@ -3,8 +3,8 @@
     "logo": "renovation studio"
   },
   "nav-bar": {
-    "styles": "Styles",
-    "inventory": "Inventory",
-    "contacts": "Contacts"
+    "new": "New",
+    "tools": "Tools",
+    "studio": "Studio"
   }
 }

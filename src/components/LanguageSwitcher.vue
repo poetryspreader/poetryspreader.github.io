@@ -28,8 +28,6 @@ export default {
 <style lang="scss">
 .language-switcher {
   cursor: pointer;
-  margin: 0 5px 0 0;
-  padding: 5px 8px;
   font-size: 25px;
   transition: .4s all;
   color: white;

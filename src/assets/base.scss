@@ -3,13 +3,19 @@
   --main-color-white: rgba(255, 255, 255, 1);
   --main-color-black: rgba(0, 0, 0, 1);
   --main-color-dark-grey: rgb(38, 38, 38);
-  --main-color-light-grey: rgba(222, 222, 222, 0.09);
+  --main-color-grey: rgba(222, 222, 222, 0.09);
+  --main-color-light-grey: rgba(210, 210, 210, 0.52);
 
   /* Fonts */
   --main-font-zilla-slab: 'Zilla Slab', serif;
   --main-font-dm-sans: 'DM Sans', sans-serif;
   --main-font-lora: 'Lora', serif;
+  --main-font-playfair-display: 'Playfair Display', serif;;
+
+  //header
   --main-font-fira-sans-condensed: 'Fira Sans Condensed', sans-serif;
+
+  // articles
 }
 
 *,
@@ -23,6 +29,6 @@
 body {
   background-color: var(--main-color-white);
   min-height: 100vh;
-  color: var(--main-color-white);
+  color: var(--main-color-black);
   font-family: var(--main-font-zilla-slab);
 }
