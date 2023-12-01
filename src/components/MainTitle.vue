@@ -23,6 +23,6 @@ export default {
   font-family: var(--main-font-playfair-display);
   background-color: var(--main-color-white);
   font-size: 50px;
-  z-index: 2;
+  z-index: 1;
 }
 </style>

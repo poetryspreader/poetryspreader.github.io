@@ -12,7 +12,9 @@
             :key='item.label'
           >
             <li
-              :style='{ "--li-background-image": `url(${imageUrl(item.image)})` }'
+              :style='{
+              "--li-background-image": `url(${imageUrl(item.image)})`
+              }'
             >
               <router-link
                 class="nav-bar__item"
