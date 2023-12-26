@@ -9,7 +9,7 @@
       'slide-in-down': this.scrollY > 171 && !this.scrollingDown
     }"
     :style="{
-      transform: this.scrollY <= 142 ? `translateY(${0.5*-scrollY}px)` : 'translateY(-73px)'
+      transform: this.scrollY <= 147 ? `translateY(${0.5*-scrollY}px)` : 'translateY(-75px)'
     }"
     ref="header"
   >
@@ -71,6 +71,6 @@ export default {
 .slide-in-down {
   top: 0;
   transition-delay: 0.5s;
-  transition: top 0.5s;
+  transition: top 0.7s;
 }
 </style>

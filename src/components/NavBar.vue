@@ -82,13 +82,13 @@ export default {
     }
     &:hover {
       border-radius: 5px;
-      background-color: var(--main-color-grey);
+      background-color: var(--main-color-grey-op-0-1);
     }
     &.active {
-      color: var(--main-color-light-grey);
+      color: var(--main-color-light-grey-op-0-5);
       cursor: default;
       &:hover {
-        background-color: var(--main-color-grey);
+        background-color: var(--main-color-grey-op-0-1);
       }
     }
   }
