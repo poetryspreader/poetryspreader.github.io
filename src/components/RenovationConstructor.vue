@@ -59,7 +59,6 @@ export default {
         { id: 2, name: 'Ламинат Эггер EPL012' }
       ],
       wallColor: 1,
-      selectedWallColors: [],
       floorType: 1
     }
   },
