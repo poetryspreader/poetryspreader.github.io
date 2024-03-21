@@ -3,11 +3,11 @@
     <div class='constructor__title'>
       {{ $t('tools.constructor.title') }}
     </div>
-    <div class='constructor__body'>
+    <div class='constructor__inner'>
       <img
         :src="imageUrl()"
         alt="Интерьер"
-        class='content'
+        class='image'
       >
       <div class='options'>
         <div class='options__item'>
@@ -73,10 +73,13 @@ export default {
 .constructor {
   margin: 0 auto 40px;
   max-width: 1600px;
-  &__body {
+  &__inner {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    .image {
+      box-shadow: 2px 2px 5px 0px #000;
+    }
     .options {
       font-size: 20px;
       margin: 0 0 0 30px;

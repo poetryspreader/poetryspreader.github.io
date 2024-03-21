@@ -1,5 +1,7 @@
 <template>
   <default-layout>
+
+    <!-- PROMO -->
     <div class='promo'>
       <div class='promo__content'>
         <div class='promo__title'>
@@ -30,23 +32,58 @@
       </video>
       <mouse-scroll-animation />
     </div>
+
+    <!-- OFFER -->
     <div class="offer">
       <div class="offer__ornament">
-        <ornament />
+        <ornament-horizontal/>
+        <ornament-circle  />
+        <ornament-horizontal />
       </div>
       <div class="offer__title">
         {{ $t('offer.title') }}
+      </div>
+      <div class="offer__content">
+        <div class="offer__slider">
+          <main-slider :photos="photos" />
+        </div>
+        <div class="offer__list">
+          <ul
+            v-for='item in optionsLength'
+          >
+            <li>
+              {{ $t(`offer.options.${item}`) }}
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </default-layout>
 </template>
 <script>
 import DefaultLayout from "@/components/layouts/default.vue";
-import Ornament from "@/components/icons/Ornament.vue"
+import OrnamentCircle from "@/components/icons/OrnamentCircle.vue"
+import OrnamentHorizontal from "@/components/icons/OrnamentHorizontal.vue"
 import MouseScrollAnimation from "@/components/MouseScrollAnimation.vue";
+import localeRU from '@/locales/ru.json';
+import MainSlider from '@/components/MainSlider.vue';
 export default {
+  data() {
+    return {
+      photos: [
+        'sliders/base-price/base-0.webp',
+        'sliders/base-price/base-1.webp'
+      ]
+    }
+  },
   components: {
-    DefaultLayout, MouseScrollAnimation, Ornament
+    DefaultLayout, MouseScrollAnimation, OrnamentCircle,
+    OrnamentHorizontal, MainSlider
+  },
+  computed: {
+    optionsLength() {
+      return Object.keys(localeRU.offer.options).length;
+    }
   }
 }
 </script>
@@ -60,7 +97,7 @@ export default {
   background-image: url('../assets/images/promo-bg.png'); /* Путь к вашему изображению */
   background-size: cover;
   background-position: center;
-  z-index: -1;
+  z-index: 0;
   &__title {
     margin: 20px 0 0 0;
     font-size: 5em;
@@ -115,7 +152,7 @@ export default {
     top: 0px;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 60%;
+    width: 50%;
     box-shadow: 0px 0px 20px 3px #000;
     opacity: 0.7;
     z-index: -1;
@@ -124,11 +161,28 @@ export default {
 .offer {
   position: relative;
   width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   &__ornament {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -30%);
+    margin: 50px 0 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  &__title {
+    font-family: var(--main-font-playfair-display);
+    font-size: 1.7em;
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+  }
+  &__list {
+    max-width: 50%;
+    margin: 0 0 0 30px;
   }
 }
 </style>

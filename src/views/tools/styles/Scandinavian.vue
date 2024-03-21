@@ -31,14 +31,14 @@ export default {
   data() {
     return {
       sketches: [
-        'chair.jpeg',
-        'kitchen.jpeg',
-        'squares.jpeg'
+        'sketches/scand-sketch-bedroom.webp',
+        'sketches/scand-sketch-bedroom.webp',
+        'sketches/scand-sketch-bedroom.webp'
       ],
       photos: [
-        'scand-1.png',
-        'scand-2.png',
-        'scand-3.png'
+        'styles/scandinavian/scand-1.png',
+        'styles/scandinavian/scand-2.png',
+        'styles/scandinavian/scand-3.png'
       ],
     }
   },

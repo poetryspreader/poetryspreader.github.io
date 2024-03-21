@@ -1,11 +1,12 @@
 <template>
   <div class="slider">
     <img
+      v-if="this.photos"
       :src="imageUrl(this.photos[this.currentIndex])"
       class="slider-image"
       alt='slider-photo'
     />
-    <div class='slider__buttons'>
+    <div v-if="!buttonsOff" class='slider__buttons'>
       <a
         v-for="(photo, index) in photos"
         :key="index"
@@ -32,6 +33,10 @@ export default {
   props: {
     photos: {
       type: Array
+    },
+    buttonsOff: {
+      type: Boolean,
+      default: false, // По умолчанию кнопки отображаются
     }
   },
   mounted() {
@@ -39,7 +44,7 @@ export default {
   },
   methods: {
     imageUrl(image) {
-      return new URL(`../assets/images/styles/scandinavian/${image}`, import.meta.url).href;
+      return new URL(`../assets/images/${image}`, import.meta.url).href;
     }
   }
 }
