@@ -35,19 +35,22 @@
 
     <!-- OFFER -->
     <div class="offer">
-      <div class="offer__ornament">
-        <ornament-horizontal/>
-        <ornament-circle  />
-        <ornament-horizontal />
-      </div>
-      <div class="offer__title">
-        {{ $t('offer.title') }}
-      </div>
       <div class="offer__content">
         <div class="offer__slider">
-          <main-slider :photos="photos" />
+          <main-slider
+            :buttonsOff="true"
+            :photos="photos"
+          />
         </div>
         <div class="offer__list">
+          <div class="offer__ornament">
+            <ornament-horizontal/>
+            <ornament-circle  />
+            <ornament-horizontal />
+          </div>
+          <div class="offer__title">
+            {{ $t('offer.title') }}
+          </div>
           <ul
             v-for='item in optionsLength'
           >
@@ -58,6 +61,14 @@
         </div>
       </div>
     </div>
+
+    <!-- COMPILATIONS -->
+    <div class="compilations">
+      <div class="compilations__title">
+        {{ $t('compilations.title') }}
+      </div>
+      <main-carousel :cards="compilations" />
+    </div>
   </default-layout>
 </template>
 <script>
@@ -67,12 +78,18 @@ import OrnamentHorizontal from "@/components/icons/OrnamentHorizontal.vue"
 import MouseScrollAnimation from "@/components/MouseScrollAnimation.vue";
 import localeRU from '@/locales/ru.json';
 import MainSlider from '@/components/MainSlider.vue';
+import MainCarousel from "@/components/MainCarousel.vue";
 export default {
   data() {
     return {
       photos: [
         'sliders/base-price/base-0.webp',
         'sliders/base-price/base-1.webp'
+      ],
+      compilations: [
+        {
+          
+        }
       ]
     }
   },
@@ -158,6 +175,7 @@ export default {
     z-index: -1;
   }
 }
+
 .offer {
   position: relative;
   width: 100%;
@@ -165,16 +183,21 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  &__slider {
+    height: 100vh;
+  }
   &__ornament {
-    margin: 50px 0 50px 0;
+    margin: 50px 0 0 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 40px;
   }
   &__title {
+    margin: 50px 0 70px 0;
+    text-align: center;
     font-family: var(--main-font-playfair-display);
-    font-size: 1.7em;
+    font-size: 2em;
   }
   &__content {
     display: flex;
@@ -183,6 +206,34 @@ export default {
   &__list {
     max-width: 50%;
     margin: 0 0 0 30px;
+    ul {
+      list-style-type: none;
+      li {
+        position: relative;
+        padding: 0.3em 6em 0.3em 2.2em;
+        margin: 0 0 1em 0;
+        font-size: 1.3em;
+      }
+      li::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 23px;
+        height: 23px;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../components/icons/check-mark.svg);
+      }
+    }
   }
 }
+
+.compilations {
+  &__title {
+
+  }
+}
+
 </style>

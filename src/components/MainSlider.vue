@@ -4,6 +4,9 @@
       v-if="this.photos"
       :src="imageUrl(this.photos[this.currentIndex])"
       class="slider-image"
+      :style='{
+        "--slider-image-height": buttonsOff ? "100vh" : "calc(100vh - 38px)"
+      }'
       alt='slider-photo'
     />
     <div v-if="!buttonsOff" class='slider__buttons'>
@@ -12,7 +15,8 @@
         :key="index"
         class="slider-btn"
         :style='{
-          "--slider-btn-border-color": index === currentIndex ? "1px solid #1476fb" : "1px solid #cdcdcd"
+          "--slider-btn-border-color": index === currentIndex ? "1px solid #1476fb" : "1px solid #cdcdcd",
+          "--slider-image-height": buttonsOff ? "100vh" : "calc(100vh - 38px)"
         }'
         @click="this.currentIndex = index"
       >
@@ -51,7 +55,7 @@ export default {
 </script>
 <style lang="scss">
 .slider {
-  margin: 44px 0 0 0;
+  // margin: 44px 0 0 0;
   position: relative;
   display: flex;
   align-items: center;
@@ -59,7 +63,7 @@ export default {
   width: 100%;
   &-image {
     width: 100%;
-    height: auto;
+    height: var(--slider-image-height);
     object-fit: cover;
   }
   &__buttons {

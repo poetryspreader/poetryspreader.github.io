@@ -3,7 +3,11 @@
     <main-title
       :title='"tools.styles.items.1.title"'
     />
-    <main-slider :photos="photos" />
+    <div
+      class="slider-wrapper"
+    >
+      <main-slider :photos="photos" />
+    </div>
     <div class='scandinavian'>
       <div class='scandinavian__description'>
         {{ $t('tools.styles.scandinavian.text-1') }}
@@ -56,6 +60,10 @@ export default {
 }
 </script>
 <style lang='scss'>
+.slider-wrapper {
+  margin: 44px 0 0 0;
+}
+
 .scandinavian {
   margin: 40px 0 0 0;
   &__description {
