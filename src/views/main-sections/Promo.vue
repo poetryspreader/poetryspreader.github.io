@@ -47,7 +47,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.isVideoLoaded = true;
-    }, 3000); // Отложенная загрузка
+    }, 7000); // Отложенная загрузка
   },
   created() {
     import('@/locales/ru.json')
