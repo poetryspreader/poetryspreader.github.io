@@ -1,27 +1,19 @@
 <template>
   <!-- PROMO -->
   <div class='promo'>
-    <div
-      class="promo__wrapper"
-    >
-      <div
-        class='promo__title'
-      >
+    <div class="promo__wrapper">
+      <div class='promo__title'>
         <span>
           {{ $t('promo.title') }}
         </span>
       </div>
-      <div
-        class='promo__subtitle'
-      >
+      <div class='promo__subtitle'>
         <span>
           {{ $t('promo.subtitle') }}
         </span>
       </div>
     </div>
-    <div
-      class='promo__options'
-    >
+    <div class='promo__options'>
       <ul
         v-if="localeRU"
         v-for='(_, index) in Object.keys(this.localeRU.promo.options).length'
@@ -31,8 +23,8 @@
         </li>
       </ul>
     </div>
-    <video class="promo__video" autoplay muted loop>
-      <source src="../../assets/videos/brushing.mov" type="video/mp4">
+    <video v-if="isVideoLoaded" class="promo__video" autoplay muted loop preload="none">
+      <source :src="brushingVideo" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <mouse-scroll-animation />
@@ -40,14 +32,22 @@
 </template>
 <script>
 import MouseScrollAnimation from "@/components/MouseScrollAnimation.vue";
+import brushingVideo from "@/assets/videos/brushing.mov";
 export default {
   components: {
     MouseScrollAnimation
   },
   data() {
     return {
-      localeRU: null
+      localeRU: null,
+      isVideoLoaded: false,
+      brushingVideo,
     }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.isVideoLoaded = true;
+    }, 3000); // Отложенная загрузка
   },
   created() {
     import('@/locales/ru.json')
@@ -128,11 +128,11 @@ export default {
   &__video {
     border-radius: 0 0 15px 15px;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 50%;
     transform: translate(-50%, 0);
     width: 50%;
-    box-shadow: 0px 0px 20px 3px #000;
+    box-shadow: 0 0 20px 3px #000;
     opacity: 0.7;
     z-index: -1;
   }
