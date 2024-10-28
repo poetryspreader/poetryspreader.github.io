@@ -63,7 +63,7 @@ export default {
   width: 100%;
   &-image {
     width: 100%;
-    height: var(--slider-image-height);
+    height: 100vh;
     object-fit: cover;
   }
   &__buttons {

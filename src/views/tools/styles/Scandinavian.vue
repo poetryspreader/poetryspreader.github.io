@@ -1,13 +1,9 @@
 <template>
   <default-layout>
-    <main-title
-      :title='"tools.styles.items.1.title"'
-    />
-    <div
-      class="slider-wrapper"
-    >
-      <main-slider :photos="photos" />
+    <div class="title">
+      {{ $t('tools.styles.items.1.title') }}
     </div>
+    <main-slider :photos="photos" />
     <div class='scandinavian'>
       <div class='scandinavian__description'>
         {{ $t('tools.styles.scandinavian.text-1') }}
@@ -28,7 +24,6 @@
 <script>
 import DefaultLayout from "@/components/layouts/default.vue";
 import 'vue3-carousel/dist/carousel.css';
-import MainTitle from '@/components/MainTitle.vue';
 import MainSlider from '@/components/MainSlider.vue';
 import RenovationConstructor from '@/components/RenovationConstructor.vue';
 export default {
@@ -47,7 +42,6 @@ export default {
     }
   },
   components: {
-    MainTitle,
     DefaultLayout,
     RenovationConstructor,
     MainSlider
@@ -60,10 +54,21 @@ export default {
 }
 </script>
 <style lang='scss'>
-.slider-wrapper {
+.title {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 0 20px;
+  font-family: var(--main-font-playfair-display);
+  background-color: var(--main-color-white);
+  font-size: 50px;
+  z-index: 1;
+}
+.slider{
   margin: 44px 0 0 0;
 }
-
 .scandinavian {
   margin: 40px 0 0 0;
   &__description {
