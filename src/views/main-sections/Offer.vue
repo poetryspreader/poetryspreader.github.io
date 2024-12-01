@@ -13,9 +13,7 @@
           <ornament-circle />
           <ornament-horizontal />
         </div>
-        <div class="offer__title">
-          {{ $t('offer.title') }}
-        </div>
+        <main-title :title="'offer.title'" />
         <ul>
           <li
             v-if="localeRU"
@@ -30,7 +28,7 @@
     <div class="steps">
       <div v-for="(component,index) in components">
         <div class="steps__item">
-          <component :is="component" />
+          <component :is="component" loading="lazy" />
           <Arrow class="steps__arrow" v-if="index + 1 < components.length" />
           <div>
             {{ $t(`offer.steps.${index}`) }}
@@ -38,14 +36,6 @@
         </div>
       </div>
       <br>
-      <!-- <div v-for="(_,index) in components">
-        <div class="steps__item">
-          <div>
-            {{ $t(`offer.steps.${index}`) }}
-          </div>
-        </div>
-        <Arrow v-if="index + 1 < components.length" />
-      </div> -->
     </div>
   </div>
 </template>
@@ -75,8 +65,8 @@ export default {
     return {
       localeRU: null,
       photos: [
-        'sliders/base-price/base-0.webp',
-        'sliders/base-price/base-1.webp'
+        'base-price/base-0.webp',
+        'base-price/base-1.webp'
       ],
       components: ["Search", "Calculator", "Signature", "Keys", "Home"]
     }
@@ -103,11 +93,8 @@ export default {
     justify-content: space-around;
     scale: 0.9;
   }
-  &__title {
+  .main-title {
     margin: 30px 0 0 0;
-    text-align: center;
-    font-family: var(--main-font-playfair-display);
-    font-size: 2.5em;
   }
   &__content {
     display: flex;
@@ -158,7 +145,6 @@ export default {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      position: relative;
       width: 100%;
       svg:nth-of-type(1) {
         height: 170px;

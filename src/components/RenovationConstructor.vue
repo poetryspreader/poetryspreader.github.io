@@ -5,6 +5,7 @@
     </div>
     <div class='constructor__inner'>
       <img
+        loading="lazy"
         :src="imageUrl()"
         alt="Интерьер"
         class='image'
@@ -78,7 +79,7 @@ export default {
     flex-direction: row;
     justify-content: center;
     .image {
-      box-shadow: 2px 2px 5px 0px #000;
+      box-shadow: 2px 2px 5px 0 #000;
     }
     .options {
       font-size: 20px;

@@ -1,7 +1,5 @@
 # scandiroom-front
-<<<<<<< HEAD
 
-This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
 
@@ -34,6 +32,12 @@ npm run build
 ```sh
 npm run lint
 ```
-=======
-design-architect web-product
->>>>>>> 4a22e1a1184938d60c626c51e3c8de6dd23e2a97
+### Deploying a subfolder to GitHub Pages
+#### Step 1
+```sh
+git add dist && git commit -m "Initial dist subtree commit"
+```
+#### Step 2
+```sh
+git subtree push --prefix dist origin gh-pages
+```

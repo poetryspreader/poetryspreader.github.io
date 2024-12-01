@@ -3,9 +3,7 @@
   <div class='promo'>
     <div class="promo__wrapper">
       <div class='promo__title'>
-        <span>
-          {{ $t('promo.title') }}
-        </span>
+        {{ $t('promo.title') }}
       </div>
       <div class='promo__subtitle'>
         <span>
@@ -47,7 +45,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.isVideoLoaded = true;
-    }, 7000); // Отложенная загрузка
+    }, 8000); // Отложенная загрузка
   },
   created() {
     import('@/locales/ru.json')
@@ -75,14 +73,12 @@ export default {
     white-space: nowrap;
   }
   &__title {
+    display: inline;
     font-size: 5em;
     font-family: var(--main-font-fira-sans-condensed);
     text-align: center;
     color: var(--main-color-white);
     backdrop-filter: invert(100%);
-    span {
-      display: inline;
-    }
   }
   &__subtitle {
     display: flex;
