@@ -14,6 +14,11 @@ const router = createRouter({
       component: () => import('../views/tools/index.vue')
     },
     {
+      path: '/contacts',
+      name: 'contacts',
+      component: () => import('../views/contacts/index.vue')
+    },
+    {
       path: '/scandinavian',
       name: 'scandinavian',
       component: () => import('../views/tools/styles/Scandinavian.vue')

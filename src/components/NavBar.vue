@@ -45,8 +45,8 @@ export default {
           ]
         },
         {
-          'label': 'nav-bar.studio',
-          'to': '/studio'
+          'label': 'nav-bar.contacts',
+          'to': '/contacts'
         }
       ]
     }

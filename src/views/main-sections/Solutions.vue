@@ -47,14 +47,14 @@
           {{ $t(`solutions.options.${this.solutionSlideIndex}.descriptions.${index}`) }}
         </li>
       </ul>
-      <main-button :label="'solutions.button'" />
+      <view-button :label="'solutions.button'" />
     </div>
   </div>
 </template>
 <script>
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay, Pagination } from 'swiper/modules';
-import MainButton from "@/components/MainButton.vue";
+import ViewButton from "@/components/buttons/view.vue";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import MainTitle from '@/components/MainTitle.vue'
@@ -62,7 +62,7 @@ import MainTitle from '@/components/MainTitle.vue'
 export default {
   components: {
     MainTitle,
-    Swiper, SwiperSlide, MainButton
+    Swiper, SwiperSlide, ViewButton
   },
   data() {
     return {

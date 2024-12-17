@@ -14,6 +14,7 @@ export default {
 </script>
 <style lang='scss'>
 .main-title {
+  display: block;
   text-align: center;
   font-family: var(--main-font-playfair-display);
   font-weight: 500;

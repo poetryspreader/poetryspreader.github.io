@@ -5,7 +5,7 @@
   "nav-bar": {
     "styles": "Стили",
     "tools": "Инвентарь",
-    "studio": "Студия",
+    "contacts": "Контакты",
     "new": "Новое"
   },
   "promo": {
@@ -198,6 +198,30 @@
     },
     "constructor": {
       "title": "Конструктор ремонта"
+    }
+  },
+  "contacts": {
+    "title": "Студия ремонта Scandiroom",
+    "subtitle": "Контакты",
+    "countries": {
+      "0": {
+        "title": "Главный офис в Пскове",
+        "items": {
+
+        },
+        "address": {
+          "label": "Адрес:",
+          "description": "ул. Алмазная, д. 10"
+        },
+        "email": {
+          "label": "э-почта:",
+          "description": " info@scandiroom.net"
+        },
+        "phone": {
+          "label": "Телефон:",
+          "description": " +7‒906‒221‒10‒61"
+        }
+      }
     }
   }
 }

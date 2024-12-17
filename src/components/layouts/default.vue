@@ -18,13 +18,15 @@
   </div>
   <slot>
   </slot>
+  <Footer />
 </template>
 <script>
 import NavBar from "@/components/NavBar.vue";
 import Logo from "@/components/Logo.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   components: {
-      NavBar, Logo
+      NavBar, Logo, Footer
   },
   data() {
     return {

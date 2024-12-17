@@ -129,20 +129,21 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  padding: 70px 10px 170px;
+  padding: 70px 10px 0;
   text-align: left;
   background-image: repeating-radial-gradient(circle at center center, transparent 0px, transparent 2px,rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 3px,transparent 3px, transparent 5px,rgba(0,0,0,0.03) 5px, rgba(0,0,0,0.03) 7px),repeating-radial-gradient(circle at center center, rgb(255,255,255) 0px, rgb(255,255,255) 9px,rgb(255,255,255) 9px, rgb(255,255,255) 21px,rgb(255,255,255) 21px, rgb(255,255,255) 31px,rgb(255,255,255) 31px, rgb(255,255,255) 40px); background-size: 20px 20px;
   &__subtitle {
     padding: 0 20px;
     max-width: 1200px;
-    margin: 30px auto 70px;
+    margin: 30px auto 30px;
     font-family: var(--main-font-playfair-display);
     font-size: 1.3em;
   }
   .swiper {
     width: 100%;
+    padding: 50px 0 0 0;
     &-pagination  {
-      top: 30px;
+      top: 0;
       height: 10px;
     }
     &-slide {
